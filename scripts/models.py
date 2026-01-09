@@ -14,7 +14,8 @@ import shap
 # -------------------------------
 # PARAMETERS
 # -------------------------------
-BASE_DIR = "/project/data"   # change to your path
+BASE_DIR = "data/processed"   # change to your path
+RESULTS_DIR = "results"
 CLUSTERS = ["all"]  # Add cluster IDs if needed
 RUN_MODELS = True
 RUN_PLOTS = True
@@ -233,15 +234,23 @@ def train_model(model_name, X_train, y_train, X_val, y_val):
     results = {}
     if model_name == "RF":
         rf = RandomForestRegressor(random_state=42)
-        param_grid = {'n_estimators':[50,100],'max_depth':[5,10],'min_samples_split':[2,5],'min_samples_leaf':[1,2]}
+        param_grid = {'n_estimators':[50,100],
+                      'max_depth':[5,10]
+                      ,'min_samples_split':[2,5],
+                      'min_samples_leaf':[1,2]
+                      }
         grid = GridSearchCV(rf, param_grid, scoring='neg_root_mean_squared_error', cv=3, n_jobs=-1)
         grid.fit(X_train, y_train)
         best_model = grid.best_estimator_
         results.update({'best_params': grid.best_params_, 'grid_best_score': -grid.best_score_})
     elif model_name == "XGB":
         xgb = XGBRegressor(random_state=42, objective='reg:squarederror', n_jobs=-1)
-        param_grid = {'n_estimators':[100,200],'max_depth':[3,5],'learning_rate':[0.01,0.1],
-                      'subsample':[0.8,1.0],'colsample_bytree':[0.8,1.0]}
+        param_grid = {'n_estimators':[100,200],
+                      'max_depth':[3,5,7],
+                      'learning_rate':[0.01,0.1, 0.2],
+                      'subsample':[0.8,1.0],
+                      'colsample_bytree':[0.8,1.0]
+                      }
         grid = GridSearchCV(xgb, param_grid, scoring='neg_root_mean_squared_error', cv=3, n_jobs=-1)
         grid.fit(X_train, y_train)
         best_model = grid.best_estimator_
@@ -308,7 +317,7 @@ def main():
     results_all_clusters = []
 
     for cluster_id in CLUSTERS:
-        cluster_path, cluster_folder = make_cluster_dirs(BASE_DIR, cluster_id)
+        cluster_path, cluster_folder = make_cluster_dirs(RESULTS_DIR, cluster_id)
 
         # Optional: filter cluster-specific rows here
         X_train_cluster = X_train.copy()
@@ -320,14 +329,18 @@ def main():
 
         results_cluster = []
 
-    for idx, (features, label) in enumerate(tqdm(zip(feature_sets, feature_labels),
-                                                  total=len(feature_sets), desc=f"{cluster_folder} Feature Sets")):
-        # Skip if a specific feature set index is set
-        if FEATURE_SET_IDX is not None and idx+1 != FEATURE_SET_IDX:
-            continue
-        available_features = [f for f in features if f in X_train_cluster.columns]
-        if not available_features:
-            continue
+        for idx, (features, label) in enumerate(tqdm(zip(feature_sets, feature_labels),
+                                                  total=len(feature_sets),
+                                                  desc=f"{cluster_folder} Feature Sets")
+                                                  ):
+            print(idx + 1, label)
+            # Skip if a specific feature set index is set
+            if FEATURE_SET_IDX is not None and idx+1 != FEATURE_SET_IDX:
+                continue
+            available_features = [f for f in features if f in X_train_cluster.columns]
+            if not available_features:
+                continue
+
             X_train_sel = X_train_cluster[available_features].copy()
             X_val_sel = X_val_cluster[available_features].copy()
             y_train_sel = y_train_cluster
@@ -335,13 +348,13 @@ def main():
 
             # TRAIN MODELS
             for model_name in ["LR", "RF", "XGB"]:
-              if RUN_MODELS:
-                res = train_model(model_name, X_train_sel, y_train_sel, X_val_sel, y_val_sel)
+                if RUN_MODELS:
+                    res = train_model(model_name, X_train_sel, y_train_sel, X_val_sel, y_val_sel)
 
                 # Save Predicted vs Real plot
                 if RUN_PLOTS:
-                  plot_path = os.path.join(cluster_path, "importances", f"pred_vs_real_{model_name}_set_{idx+1}.png")
-                  plot_predicted_vs_real(y_val_sel, res['y_val_pred'], model_name, label, plot_path, log_scale)
+                    plot_path = os.path.join(cluster_path, "importances", f"pred_vs_real_{model_name}_set_{idx+1}.png")
+                    plot_predicted_vs_real(y_val_sel, res['y_val_pred'], model_name, label, plot_path, log_scale=True)
 
                 # SHAP / Feature importances
                 if model_name in ["RF","XGB"] and RUN_SHAP:
@@ -356,7 +369,8 @@ def main():
                     'Feature_set_index': idx+1,
                     'Feature_set_code': label,
                     'Model': model_name,
-                    **{k:v for k,v in res.items() if k not in ['y_train_pred','y_val_pred','model']}
+                    **{k:v for k,v in res.items() 
+                       if k not in ['y_train_pred','y_val_pred','model']}
                 })
 
         # Save cluster summary
@@ -364,7 +378,7 @@ def main():
         results_all_clusters.extend(results_cluster)
 
     # Save overall summary
-    pd.DataFrame(results_all_clusters).to_csv(os.path.join(BASE_DIR, "summary_all_clusters.csv"), index=False)
+    pd.DataFrame(results_all_clusters).to_csv(os.path.join(RESULTS_DIR, "summary_all_clusters.csv"), index=False)
 
 if __name__ == "__main__":
 
