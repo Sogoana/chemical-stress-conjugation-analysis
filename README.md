@@ -5,23 +5,29 @@ This repository contains the code and workflow for the analysis of chemical stre
 The project is designed to be reproducible, modular and extensible with clear separation between data processing, feature generation, data split, possible clustering and model training / evaluation
 
 # Project structure
+```text
 chemical-stress-conjugation-analysis/
-    README.md
-    data/
-        raw/
-        processed/
-    scripts/
-        features.py   # Feature calculation (physicochemical, fingerprints, MACCS)
-        snippet_PCS.py   # Calculation of number of Principal Components for data_split.py
-        data_split.py   # feature dimensionality reduction, Train/validation splitting and clustering
-        models.py   # Model training, evaluation, and SHAP analysis
-    results/
-        all_data/
-            importances/   # Feature importance & SHAP outputs
-            coefficients/   # Linear model coefficients
-            summary_results.csv
-        summary_all_clusters.csv
-    environment.yml   # Conda environment specification
+├── README.md
+│
+├── data/
+│   ├── raw/                    # Raw input data (e.g. original .xlsx files)
+│   └── processed/              # Processed datasets (train/validation CSVs)
+│
+├── scripts/
+│   ├── features.py             # Feature calculation (physicochemical, fingerprints, MACCS)
+│   ├── snippet_PCS.py          # Calculation of number of Principal Components for data_split.py
+│   ├── data_split.py           # Feature dimensionality reduction, train/validation split, clustering
+│   └── models.py               # Model training, evaluation, and SHAP analysis
+│
+├── results/
+│   ├── all_data/
+│   │   ├── importances/         # Feature importance and SHAP outputs
+│   │   ├── coefficients/        # Linear model coefficients
+│   │   └── summary_results.csv
+│   │
+│   └── summary_all_clusters.csv # Aggregated results across clusters
+│
+└── environment.yml              # Conda environment specification
 
 
 # Environment Setup
