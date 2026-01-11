@@ -6,27 +6,22 @@ The project is designed to be reproducible, modular and extensible with clear se
 
 # Project structure
 chemical-stress-conjugation-analysis/
-│
-├── README.md
-│
-├── data/
-│ ├── raw/
-│ ├── processed/
-│
-├── scripts/
-│ ├── features.py # Feature calculation (physicochemical, fingerprints, MACCS)
-│ ├── snippet_PCA.py # Calculation of number of Principal Components for data_split.py
-│ ├── data_split.py # feature dimensionality reduction, Train/validation splitting and clustering
-│ └── models.py # Model training, evaluation, and SHAP analysis
-│
-├── results/
-│ ├── all_data/
-│ │ ├── importances/ # Feature importance & SHAP outputs
-│ │ ├── coefficients/ # Linear model coefficients
-│ │ └── summary_results.csv
-│ └── summary_all_clusters.csv
-│
-├── environment.yml # Conda environment specification
+    README.md
+    data/
+        raw/
+        processed/
+    scripts/
+        features.py   # Feature calculation (physicochemical, fingerprints, MACCS)
+        snippet_PCS.py   # Calculation of number of Principal Components for data_split.py
+        data_split.py   # feature dimensionality reduction, Train/validation splitting and clustering
+        models.py   # Model training, evaluation, and SHAP analysis
+    results/
+        all_data/
+            importances/   # Feature importance & SHAP outputs
+            coefficients/   # Linear model coefficients
+            summary_results.csv
+        summary_all_clusters.csv
+    environment.yml   # Conda environment specification
 
 
 # Environment Setup
