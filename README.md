@@ -28,7 +28,7 @@ chemical-stress-conjugation-analysis/
 │   └── summary_all_clusters.csv # Aggregated results across clusters
 │
 └── environment.yml              # Conda environment specification
-
+```
 
 # Environment Setup
 I. This project uses Conda for environment management.
