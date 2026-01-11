@@ -18,8 +18,8 @@ BASE_DIR = "data/processed"   # change to your path
 RESULTS_DIR = "results"
 CLUSTERS = ["all"]  # Add cluster IDs if needed
 RUN_MODELS = True
-RUN_PLOTS = True
-RUN_SHAP = True
+RUN_PLOTS = False
+RUN_SHAP = False
 
 # Feature set control: None = run all, or provide 1-based index to run only that set
 FEATURE_SET_IDX = None
@@ -275,9 +275,13 @@ def train_model(model_name, X_train, y_train, X_val, y_val):
     train_r2 = r2_score(y_train, y_train_pred)
     val_r2 = r2_score(y_val, y_val_pred)
     overfit = train_r2 - val_r2
+    n_train = len(y_train)
+    n_val = len(y_val)
+    n_total = n_train + n_val
+    bias = ((y_train - y_train_pred).sum() + (y_val - y_val_pred).sum()) / n_total
 
     results.update({'train_rmse': train_rmse, 'val_rmse': val_rmse,
-                    'train_r2': train_r2, 'val_r2': val_r2, 'overfit': overfit,
+                    'train_r2': train_r2, 'val_r2': val_r2, 'overfit': overfit, 'bias': bias,
                     'y_train_pred': y_train_pred, 'y_val_pred': y_val_pred,
                     'model': best_model})
     return results
