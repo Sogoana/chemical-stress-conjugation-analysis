@@ -39,7 +39,7 @@ python scripts/features.py
 ## II. Create unified dataframe
 Matrix was created including metadata, numerical response variable and generated features and categorization by use included in doc. MultiGroup.
 ## III. Data splitting
-First. snippet on PCA is run to find the minimum number of principal components (PCs) needed to explain at least 90% of the data. This parameter should be changed in the data_split.py
+First. snippet on PCA is run to find the minimum number of principal components (PCs) needed to explain at least 90% of the data. This parameter should be changed in the data_split.py .
 Second. python scripts/data_split.py
 ### IV. Model training and evaluation
 python scripts/models.py
@@ -53,8 +53,8 @@ Models implemented:
 Features used:
 - Concentration
 - Physicochemical descriptors
-- Morgan fingerprints (FPs)
-- MACCS on PCs.
+- Extended-Connectivity Fingerprints (ECPF4)
+- Molecular ACCess System
 - Chemical group by use
 - Species involved in the experiments (metadata)
 
@@ -71,13 +71,13 @@ Results are saved under:
 results/
 
 # Reproducibility
-- Random seeds are fixed (42) on functions that could introduce randomness
+- The randomness introduced by functions is prevented by fixing random seeds (42) when needed.
 - Dependencies are pinned via Conda
 - Scripts are modular and can be run independently
 
 NOTE: 
 The project is currently developed and tested on macOS 14.5 (23F79)
-Large in between data files were not included in the repository
+Large transitory data files were not included in the repository
 
 # Author
 Ana Rey Sogo
