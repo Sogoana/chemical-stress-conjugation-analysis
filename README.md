@@ -31,15 +31,17 @@ chemical-stress-conjugation-analysis/
 ```
 
 # Environment Setup
+```text
 I. This project uses Conda for environment management.
 II. Install dependencies included in environment.yml .
+```
 
 # Workflow overview
-## I. CID and feature generation
+### I. CID and feature generation
 python scripts/features.py
-## II. Create unified dataframe
+### II. Create unified dataframe
 Matrix was created including metadata, numerical response variable and generated features and categorization by use included in doc. MultiGroup.
-## III. Data splitting
+### III. Data splitting
 First. snippet on PCA is run to find the minimum number of principal components (PCs) needed to explain at least 90% of the data. This parameter should be changed in the data_split.py .
 Second. python scripts/data_split.py
 ### IV. Model training and evaluation
@@ -68,8 +70,9 @@ NOTE: models are trained on multiple feature-set combinations on the features in
 - Coefficients (LR)
 
 Results are saved under:
-
+```text
 results/
+```
 
 # Reproducibility
 - The randomness introduced by functions is prevented by fixing random seeds (42) when needed.
@@ -77,7 +80,7 @@ results/
 - Scripts are modular and can be run independently
 
 NOTE: 
-The project is currently developed and tested on macOS 14.5 (23F79)
+The project is currently developed and tested on macOS 14.5 (23F79).
 Large transitory data files were not included in the repository
 
 # Author
