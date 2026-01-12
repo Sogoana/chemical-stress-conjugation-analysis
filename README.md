@@ -4,6 +4,12 @@ Python-based analysis of extracted RP4 plasmid conjugation data under chemical s
 This repository contains the code and workflow for the analysis of chemical stresss conjugation effects using molecular chemical descriptors, fingerprints and integrating them into Machine-learning models.
 The project is designed to be reproducible, modular and extensible with clear separation between data processing, feature generation, data split, possible clustering and model training / evaluation
 
+## Project status
+
+This repository is under active development.
+Results, feature sets, and models may change.
+Stable versions used in publications are archived on Zenodo.
+
 # Project structure
 ```text
 chemical-stress-conjugation-analysis/
@@ -20,10 +26,10 @@ chemical-stress-conjugation-analysis/
 │   └── models.py               # Model training, evaluation, and SHAP analysis
 │
 ├── results/
-│   ├── all_data/
+│   ├── all_data/                # Data set used (i.e., all data, Cluster X)
 │   │   ├── importances/         # Feature importance and SHAP outputs
 │   │   ├── coefficients/        # Linear model coefficients
-│   │   └── summary_results.csv
+│   │   └── summary_results.csv  # All data combining, if used, all different data sets
 │   │
 │   └── summary_all_clusters.csv # Aggregated results across clusters
 │
@@ -87,4 +93,9 @@ Large transitory data files were not included in the repository
 Ana Rey Sogo
 
 # License
-This project is intended. for academic and research use
+This project is intended for academic and research use.
+
+- **Code** in this repository is released under the MIT License (see the `LICENSE` file).
+- **Data** (extracted conjugation datasets) are licensed under the
+  [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+  license. Please attribute the original sources.
