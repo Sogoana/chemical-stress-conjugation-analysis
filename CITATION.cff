@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the following metadata."
+title: "Chemical Stress Conjugation Analysis"
+abstract: "A Python project for chemical stress conjugation modeling, feature analysis, and SHAP interpretation."
+authors:
+    given-names: Rey-Sogo, Ana
+    orcid: "https://orcid.org/0000-0002-0245-1804"
+date-released: 2026-01-11
+version: 1.0.0
+keywords:
+  - chemoinformatics
+  - machine learning
+  - SHAP
+license: MIT
+url: "https://github.com/Sogoana/chemical-stress-conjugation-analysis"
