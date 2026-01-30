@@ -25,10 +25,11 @@ chemical-stress-conjugation-analysis/
 │   └── models.py               # Model training, evaluation, and SHAP analysis
 │
 ├── results/
-│   ├── all_data/                # Data set used (i.e., all data, Cluster X)
+│   ├── all_data/                # Data cluster selection used (i.e., all data, Cluster X)
 │   │   ├── importances/         # Feature importance and SHAP outputs
 │   │   ├── coefficients/        # Linear model coefficients
-│   │   └── summary_results.csv  # All data combining, if used, all different data sets
+│   │   └── summary_results.csv  # Model performance parameters within selected clusters (in this case: all data)
+│   └── summary_all_clusters.csv # Model performance paramenterssummary, if used, all different data clusters
 │
 └── environment.yml              # Conda environment specification
 ```
@@ -85,6 +86,7 @@ results/
 
 NOTE: 
 The project is currently developed and tested on macOS 14.5 (23F79).
+Some result folders generated during experimentation were not incorporated into this repository.
 
 # Author
 Ana Rey Sogo
