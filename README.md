@@ -41,27 +41,28 @@ II. Install dependencies included in environment.yml .
 
 # Workflow overview
 ### I. CID and feature generation
-python scripts/features.py
+Script: scripts/features.py
 ### II. Create unified dataframe
-Matrix was created including metadata, numerical response variable and generated features and categorization by use included in doc. MultiGroup.
+Matrix was created including metadata, numerical response variable and features obtained from CID (I.). In addition usage multi group was assigned to each CID that will be used as feature input in the model (IV.).
 ### III. Data splitting
-First. snippet on PCA is run to find the minimum number of principal components (PCs) needed to explain at least 90% of the data. This parameter should be changed in the data_split.py .
-Second. python scripts/data_split.py
+First: snippet on PCA is run to find the minimum number of principal components (PCs) needed to explain at least 90% of the data
+Second: dimensionality reduction and data split on training and validation dataset for posterior model training and evaluation (IV). 
+Script: scripts/data_split.py .
 ### IV. Model training and evaluation
-python scripts/models.py
+Script: scripts/model.py
 
 # Model information
 Models implemented:
 - Linear Regression (LR)
 - Random Forest Regressor (RF)
-- XGBoost Regressor (XGB)
+- eXtreme Gradient Boosting Regressor (XGB)
 
 Features used:
 - Concentration
 - Physicochemical descriptors
 - Extended-Connectivity Fingerprints (ECPF4)
 - Molecular ACCess System
-- Chemical group by use
+- Chemical use category
 - Species involved in the experiments (metadata)
 
 NOTE: models are trained on multiple feature-set combinations on the features included above.
@@ -69,7 +70,7 @@ NOTE: models are trained on multiple feature-set combinations on the features in
 # OUTPUT
 - Performance metrics (RMSE, R2, Overfitting estimate, Bias)
 - Predicted vs. real plots
-- Feature importance and SHAP values (RF and XGBoost)
+- Feature importance and SHAP values (RF and XGB)
 - Coefficients (LR)
 
 Results are saved under:
@@ -84,13 +85,12 @@ results/
 
 NOTE: 
 The project is currently developed and tested on macOS 14.5 (23F79).
-Large transitory data files were not included in the repository
 
 # Author
 Ana Rey Sogo
 
 # License
-This project is intended for academic and research use.
+This project is intended for academic and research use only.
 
 - **Code** in this repository is released under the MIT License (see the `LICENSE` file).
 - **Data** (extracted conjugation datasets) are licensed under the
