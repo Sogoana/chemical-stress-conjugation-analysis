@@ -1,0 +1,165 @@
+S_ID,S,CID,SMILES
+ACE,Acesulfame potassium,11074431,CC1=CC(=O)[N-]S(=O)(=O)O1.[K+]
+AGOM,Agomelatine,82148,CC(=O)NCCC1=CC=CC2=C1C=C(C=C2)OC
+APOL,p-Aminophenol,403,C1=CC(=CC=C1N)O
+ASP,Aspartame,134601,COC(=O)[C@H](CC1=CC=CC=C1)NC(=O)[C@H](CC(=O)O)N
+BMIH,1-butyl-3-methylimidazolium hexafluorophosphate,2734174,CCCCN1C=C[N+](=C1)C.F[P-](F)(F)(F)(F)F
+BMIT,1-butyl-3-methylimidazolium tetrafluoroborate,2734178,[B-](F)(F)(F)F.CCCCN1C=C[N+](=C1)C
+BPA,Bisphenol A,6623,CC(C)(C1=CC=C(C=C1)O)C2=CC=C(C=C2)O
+BPAF,Bisphenol AF,73864,C1=CC(=CC=C1C(C2=CC=C(C=C2)O)(C(F)(F)F)C(F)(F)F)O
+BPAP,Bisphenol AP,623849,CC(C1=CC=CC=C1)(C2=CC=C(C=C2)O)C3=CC=C(C=C3)O
+BPB,Bisphenol B,66166,CCC(C)(C1=CC=C(C=C1)O)C2=CC=C(C=C2)O
+BPF,Bisphenol F,12111,C1=CC(=CC=C1CC2=CC=C(C=C2)O)O
+BPRO,Bupropion,444,CC(C(=O)C1=CC(=CC=C1)Cl)NC(C)(C)C
+BPS,Bisphenol S,6626,C1=CC(=CC=C1O)S(=O)(=O)C2=CC=C(C=C2)O
+BPZ,Bisphenol Z,232446,C1CCC(CC1)(C2=CC=C(C=C2)O)C3=CC=C(C=C3)O
+CBZ,Carbamazepine,2554,C1=CC=C2C(=C1)C=CC3=CC=CC=C3N2C(=O)N
+CEOX,Cerium(IV) oxide,16217267,O=[Y]O[Y]=O.O=[Ce]=O
+CMQT,Chlormequat,13837,C[N+](C)(C)CCCl
+COPP,Copper ion,23978,[Cu]
+CXOL,Chloroxylenol,2723,CC1=CC(=CC(=C1Cl)C)O
+DCF,Diclofenac,3033,C1=CC=C(C(=C1)CC(=O)O)NC2=C(C=CC=C2Cl)Cl
+DCM,Dichloroacetonitrile,18177,C(#N)C(Cl)Cl
+DDAC,Didecyl dimethyl ammonium chloride,23558,CCCCCCCCCC[N+](C)(C)CCCCCCCCCC.[Cl-]
+DDBAC,Dodecyl dimethyl benzyl ammonium chloride,8753,CCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+DDDAC,Didodecyl dimethyl ammonium chloride,18843,CCCCCCCCCCCC[N+](C)(C)CCCCCCCCCCCC.[Cl-]
+DLXT,Duloxetine,60835,CNCC[C@@H](C1=CC=CS1)OC2=CC=CC3=CC=CC=C32
+DTAC,Dodecyl trimethyl ammonium chloride,8152,CCCCCCCCCCCC[N+](C)(C)C.[Cl-]
+ESCTP,Escitalopram,146570,CN(C)CCC[C@@]1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F
+FXT,Fluoxetine,3386,CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F
+GENX,2-methyl-3-oxahexanoate,15001768,COC(=O)C(C(F)(F)F)(OC(C(=O)C(F)(F)F)(F)F)F
+GFB,Gemfibrozil,3463,CC1=CC(=C(C=C1)C)OCCCC(C)(C)C(=O)O
+HDBAC,Hexadecyl dimethyl benzyl ammonium chloride,31202,CCCCCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+IBP,Ibuprofen,3672,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+IOPRO,Iopromide,3736,CN(CC(CO)O)C(=O)C1=C(C(=C(C(=C1I)C(=O)NCC(CO)O)I)NC(=O)COC)I
+KTPF,Ketoprofen,3825,CC(C1=CC(=CC=C1)C(=O)C2=CC=CC=C2)C(=O)O
+LRTD,Loratadine,3957,CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1
+MONP,Molybdenum nanoparticles,23932,[Mo]
+NMRB,n-butyl-N-methylpyrrolidinium bromide,11009532,CCCC[N+]1(CCCC1)C.[Br-]
+NO,Nitric oxide,145068,[N]=O
+NPOL,p-Nitrophenol,980,C1=CC(=CC=C1[N+](=O)[O-])O
+NPX,Naproxen,156391,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+PCM,Paracetamol,1983,CC(=O)NC1=CC=C(C=C1)O
+PFDOA,Perfluorododecanoic acid,67545,C(=O)(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O
+PFOA,Perfluorooctanoic acid,9554,C(=O)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O
+PFOS,Perfluorooctanesulfonic acid,74483,C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F
+POL,Phenol,996,C1=CC=C(C=C1)O
+PPOL,Propranolol,4946,CC(C)NCC(COC1=CC=CC2=CC=CC=C21)O
+SCCH,Saccharin,5143,C1=CC=C2C(=C1)C(=O)NS2(=O)=O
+SHP,Inorganic salt Na[PF6],5147921,F[P-](F)(F)(F)(F)F.[Na+]
+SILVNP,Silver,23954,[Ag]
+STL,Sertraline,68617,CN[C@H]1CC[C@H](C2=CC=CC=C12)C3=CC(=C(C=C3)Cl)Cl
+SUCRA,Sucralose,71485,C([C@@H]1[C@@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CCl)O)O)CCl)O)O)Cl)O
+TBC,Tebuconazole,86102,CC(C)(C)C(CCC1=CC=C(C=C1)Cl)(CN2C=NC=N2)O
+TCM,Trichloromethane,6212,C(Cl)(Cl)Cl
+TCS,Triclosan,5564,C1=CC(=C(C=C1Cl)O)OC2=C(C=C(C=C2)Cl)Cl
+TEAB,Tetraethylammonium bromide,6285,CC[N+](CC)(CC)CC.[Br-]
+NEHP,N-ethylpyridinium hexafluorophosphate,23160050,CC[N+]1=CC=CC=C1.F[P-](F)(F)(F)(F)F
+MLGRN,Malachite Green,11294,CN(C)C1=CC=C(C=C1)C(=C2C=CC(=[N+](C)C)C=C2)C3=CC=CC=C3.[Cl-]
+TRXN,Trioxymethylene,8081,C1OCOCO1
+ETBNZ,Ethylbenzene,7500,CCC1=CC=CC=C1
+OXYL,O-xylene,7237,CC1=CC=CC=C1C
+STYR,Styrene,7501,C=CC1=CC=CC=C1
+DCLAN,"2,4-dichloroaniline",11123,C1=CC(=C(C=C1Cl)Cl)N
+NITAC,Nitrous acid,23668193,N(=O)[O-].[Na+]
+PRCLZ,Prochloraz,73665,CCCN(CCOC1=C(C=C(C=C1Cl)Cl)Cl)C(=O)N2C=CN=C2
+COPPOXNP,Nano-Copper oxide,14829,O=[Cu]
+IAA,Indoleacetic acid,802,C1=CC=C2C(=C1)C(=CN2)CC(=O)O
+ETH,Ethel,27982,C(CCl)P(=O)(O)O
+GA,Gibberellin,522636,CC12C(C=CC3(C1C(C45C3CCC(C4)(C(=C)C5)O)C(=O)O)OC2=O)O
+CYN,Cylindrospermopsin,42628600,C[C@H]1[C@H](C[C@@H]2C[C@@H](NC3=NC[C@H]1N23)[C@H](C4=CC(=O)NC(=O)N4)O)OS(=O)(=O)O
+CLOR,Chlorite,197148,[O-]Cl=O
+BRMT,Bromate,84979,[O-]Br(=O)=O
+LICL,Lithium chloride,433294,[Li+].[Cl-]
+MLT,Malathion,4004,CCOC(=O)CC(C(=O)OCC)SP(=S)(OC)OC
+DMTT,Dimethoate,3082,CNC(=O)CSP(=S)(OC)OC
+BHT,"2,6-di-tert-butyl-4-methylphenol",31404,CC1=CC(=C(C(=C1)C(C)(C)C)O)C(C)(C)C
+BHA,3-tert-butyl-4-hydroxyanisole,8456,CC(C)(C)C1=C(C=CC(=C1)OC)O
+TBHQ,Tert-butylhydroquinone,16043,CC(C)(C)C1=C(C=CC(=C1)O)O
+PG,Propyl gallate,4947,CCCOC(=O)C1=CC(=C(C(=C1)O)O)O
+CLA,Clofibric acid,2797,CC(C)(C(=O)O)OC1=CC=C(C=C1)Cl
+CO,Carbon dioxide,280,C(=O)=O
+SMZ,Sulfamethazine,5327,CC1=CC(=NC(=N1)NS(=O)(=O)C2=CC=C(C=C2)N)C
+GO,Graphene oxide,163320950,C1=CC2=CC3=CC4=C5C6=C3C7=C2C(=C1)C8=C9C7(C1=C6C2(C3=C6C7%10C%11=C(C=C%12C=CC=C%13C%12=C%11C%11(C6(C6%12C(=C53)C(=C4)C=C3C6(O%12)C4=C%11C%13=C(C=C4C=C3)C(=O)O)O)O)C=C3C7(C2=C2C11C4(C9=C(C=C8)C(=CC4=CC2=C3)C(=O)O)O1)O%10)O)O
+MECH,Mercuric chloride,24085,Cl[Hg]Cl
+TDF,Triadimefon,39385,CC(C)(C)C(=O)C(N1C=NC=N1)OC2=CC=C(C=C2)Cl
+CTL,Chloronitrile,15910,C(#N)C1=C(C(=C(C(=C1Cl)Cl)Cl)C#N)Cl
+AZO,Azoxystrobin,3034285,CO/C=C(\C1=CC=CC=C1OC2=NC=NC(=C2)OC3=CC=CC=C3C#N)/C(=O)OC
+CBD,Carbendazim,25429,COC(=O)NC1=NC2=CC=CC=C2N1
+MLTN,Melatonin,896,CC(=O)NCCC1=CNC2=C1C=C(C=C2)OC
+NSMX,4-NSMX,717516,CC1=CC(=NO1)NS(=O)(=O)C2=CC=C(C=C2)[N+](=O)[O-]
+ACSMX,N4-AcSMX,65280,CC1=CC(=NO1)NS(=O)(=O)C2=CC=C(C=C2)NC(=O)C
+ACSDZ,N4-AcSDZ,64952,CC(=O)NC1=CC=C(C=C1)S(=O)(=O)NC2=NC=CC=N2
+TET,Tetracycline,54675776,C[C@@]1([C@H]2C[C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O
+OTET,Oxytetracycline,54680691,C[C@@]1([C@H]2[C@@H]([C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O)O.O.O
+CLTET,Chlortetracycline,54675777,C[C@@]1([C@H]2C[C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C(C=CC(=C41)Cl)O)O)O)O)C(=O)N)N(C)C)O
+DXCYC,Doxycycline,54686183,CCO.C[C@@H]1[C@H]2[C@@H]([C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O.C[C@@H]1[C@H]2[C@@H]([C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O.O.Cl.Cl
+MNCYC,Minocycline,54675783,CN(C)[C@H]1[C@@H]2C[C@@H]3CC4=C(C=CC(=C4C(=C3C(=O)[C@@]2(C(=C(C1=O)C(=O)N)O)O)O)O)N(C)C
+DMCYC,Demeclocycline,54680690,CN(C)[C@H]1[C@@H]2C[C@@H]3[C@@H](C4=C(C=CC(=C4C(=C3C(=O)[C@@]2(C(=C(C1=O)C(=O)N)O)O)O)O)Cl)O
+OMCYC,Omadacycline,54697325,CC(C)(C)CNCC1=CC(=C2C[C@H]3C[C@H]4[C@@H](C(=O)C(=C([C@]4(C(=O)C3=C(C2=C1O)O)O)O)C(=O)N)N(C)C)N(C)C
+TGCYC,Tigecycline,54686904,CC(C)(C)NCC(=O)NC1=CC(=C2C[C@H]3C[C@H]4[C@@H](C(=O)C(=C([C@]4(C(=O)C3=C(C2=C1O)O)O)O)C(=O)N)N(C)C)N(C)C
+HMIM,1-hexyl-3-methylimidazolium tetrafluoroborate,2734179,[B-](F)(F)(F)F.CCCCCCN1C=C[N+](=C1)C
+OMIM,1-methyl-3-octylimidazolium tetrafluoroborate,11460221,[B-](F)(F)(F)F.CCCCCCCCN1C=C[N+](=C1)C
+CHTSN,Chitosan,139025974,CC(CNC1[C@@H](OC([C@H](C1OCC(C)O)O[C@H]2C(C([C@@H](C(O2)COCC(C)O)O[C@H]3C(C([C@@H](C(O3)COCC(C)O)OCC(C)O)OCC(C)O)NCC(C)O)OCC(C)O)NCC(C)O)COCC(C)O)OCC(C)O)O
+CDCH,Cadmium chloride,31193,[Cd+2]
+BACT,Benzyl dimethyl tetradecyl ammonium chloride,8755,CCCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+BEC,Benzethonium chloride,8478,CC(C)(C)CC(C)(C)C1=CC=C(C=C1)OCCOCC[N+](C)(C)CC2=CC=CC=C2.[Cl-]
+NNPOL,Nonylphenol,67296,CCCCCCCCCC1=CC=CC=C1O
+PLTXL,Paclitaxel,36314,CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C
+DEHP,di-2-ethylhexyl phthalate,8343,CCCCC(CC)COC(=O)C1=CC=CC=C1C(=O)OCC(CC)CCCC
+HPDAEs,6:2 Cl-PDAEs,22568738,C(C(C(C(F)(F)Cl)(F)F)(F)F)(C(C(OC(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F
+OPDAE,8:2 Cl-PFAEs,15099039,C(C(C(C(C(F)(F)Cl)(F)F)(F)F)(F)F)(C(C(C(OC(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F
+PFHA,Perfluorohexanoic acid,67542,C(=O)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)O
+PFNA,Perfluorononanoic acid,67821,C(=O)(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O
+PFBA,Perfluorobutanoic acid,9777,C(=O)(C(C(C(F)(F)F)(F)F)(F)F)O
+CIN,Cinnamic acid,444539,C1=CC=C(C=C1)/C=C/C(=O)O
+BAI,Baicalin,64982,C1=CC=C(C=C1)C2=CC(=O)C3=C(C(=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O)O
+SUCRO,Sucrose,5988,C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CO)O)O)O)O
+PPD,"N-(1,3-dimethylbutyl)-N′-phenyl-p-phenylenediamine",13101,CC(C)CC(C)NC1=CC=C(C=C1)NC2=CC=CC=C2
+PPDQ,"2-Anilino-5-(4-methylpentan-2-ylamino)cyclohexa-2,5-diene-1,4-dione",154926030,CC(C)CC(C)NC1=CC(=O)C(=CC1=O)NC2=CC=CC=C2
+ASH,Acetylshikonin,479501,CC(=CC[C@H](C1=CC(=O)C2=C(C=CC(=C2C1=O)O)O)OC(=O)C)C
+NACO,Sodium hypochlorite,23665760,[O-]Cl.[Na+]
+CLOD,Chlorine dioxide,24870,O=Cl[O]
+MB,Molybdenum disulfide nanosheets,14823,S=[Mo]=S
+CHLR,Chlorine,24526,ClCl
+BROM,Bromide ion,259,[Br-]
+IODI,Iodide ion,30165,[I-]
+IODN,Iodine,807,II
+OXOA,Oxolinic acid,4628,CCN1C=C(C(=O)C2=CC3=C(C=C21)OCO3)C(=O)O
+SONI,Sodium nitrate,24268,[N+](=O)([O-])[O-].[Na+]
+POXD,Hydrogen peroxide,784,OO
+BC,Benzalkonium chloride,3014024,CCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+BAB,Benzalkonium bromide,23705,CCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Br-]
+DOM,Domiphen,3149,CCCCCCCCCCCC[N+](C)(C)CCOC1=CC=CC=C1
+CHOP,p-Chlorophenol,4684,C1=CC(=CC=C1O)Cl
+TCPOL,3-Chlorophenol,7933,C1=CC(=CC(=C1)Cl)O
+DCPOL,"2,3-Dichlorophenol",11334,C1=CC(=C(C(=C1)Cl)Cl)O
+HCHP,Hexachlorophene,3598,C1=C(C(=C(C(=C1Cl)Cl)CC2=C(C(=CC(=C2Cl)Cl)Cl)O)O)Cl
+CHX,Chlorhexidine acetate,9562059,CC(=O)O.CC(=O)O.C1=CC(=CC=C1N/C(=N/C(=NCCCCCCN=C(/N=C(/NC2=CC=C(C=C2)Cl)\N)N)N)/N)Cl
+CH,Chlorhexidine hydrochloride,9571016,C1=CC(=CC=C1N/C(=N/C(=NCCCCCCN=C(/N=C(/NC2=CC=C(C=C2)Cl)\N)N)N)/N)Cl.Cl.Cl
+ETOH,Ethanol,702,CCO
+IPOH,Isopropyl alcohol,3776,CC(C)O
+DBDMH,"1,3-Dibromo-5,5-dimethylimidazolidine-2,4-dione",6479,CC1(C(=O)N(C(=O)N1Br)Br)C
+CLMT,Chloramine T,3641960,CC1=CC=C(C=C1)S(=O)(=O)[N-]Cl.[Na+]
+NADC,Sodium dichloroisocyanurate,517202,C1(=NC(=O)N(C(=O)N1Cl)Cl)[O-].[Na+]
+TCCA,Trichloroisocyanurate ,6909,C1(=O)N(C(=O)N(C(=O)N1Cl)Cl)Cl
+NAIO,Sodium periodate,23667635,[O-]I(=O)(=O)=O.[Na+]
+KFER,Dipotassium;iron(6+);tetrakis(oxygen(2-))  ,53493006,[O-2].[O-2].[O-2].[O-2].[K+].[K+].[Fe+6]
+COPPSU,Copper;sulfate;pentahydrate  ,24463,O.O.O.O.O.[O-]S(=O)(=O)[O-].[Cu+2]
+AMPS,Ammonium persulfate,62648,[NH4+].[NH4+].[O-]S(=O)(=O)OOS(=O)(=O)[O-]
+PSPS,Potassium persulfate,24412,[O-]S(=O)(=O)OOS(=O)(=O)[O-].[K+].[K+]
+PERA,Peracetic acid,6585,CC(=O)OO
+CTAB,Cetyltrimethyl ammonium bromide,5974,CCCCCCCCCCCCCCCC[N+](C)(C)C.[Br-]
+CYRO,Cyromazine,47866,C1CC1NC2=NC(=NC(=N2)N)N
+KRES,Kresoxim-methyl,6112114,CC1=CC=CC=C1OCC2=CC=CC=C2/C(=N\OC)/C(=O)OC
+ACET,Acetamiprid,117064438,[2H]C([2H])([2H])N(CC1=CN=C(C=C1)Cl)C(=NC#N)C
+DINO,Dinotefuran,197701,CN=C(NCC1CCOC1)N[N+](=O)[O-]
+NITE,Nitenpyram,3034287,CCN(CC1=CN=C(C=C1)Cl)/C(=C/[N+](=O)[O-])/NC
+THIA,Thiamethoxam,5821911,CN\1COCN(/C1=N/[N+](=O)[O-])CC2=CN=C(S2)Cl
+PHMG,Polyhexamethylene guanidine hydrochloride,131636907,C(CCCN)CCN.C(=N)(N)N.Cl
+PHMB,Polyhexamethylene biguanide hydrochloride,176517063,C(CCCN)CCN.C(CCCN=C(N)NC#N)CCNC(=NC#N)N.Cl
+CLPY,Chlorpyrifos,2730,CCOP(=S)(OCC)OC1=NC(=C(C=C1Cl)Cl)Cl
+CLPYM,Chlorpyrifos methyl,21803,COP(=S)(OC)OC1=NC(=C(C=C1Cl)Cl)Cl
+DHDAC,Dihexadecyl dimethyl ammonium chloride,15743,CCCCCCCCCCCCCCCC[N+](C)(C)CCCCCCCCCCCCCCCC.[Cl-]
+DODAC,Dioctadecyl dimethyl ammonium chloride,7879,CCCCCCCCCCCCCCCCCC[N+](C)(C)CCCCCCCCCCCCCCCCCC.[Cl-]
+ZNOXNPP,Nano-Zinc oxide,14806,O=[Zn]

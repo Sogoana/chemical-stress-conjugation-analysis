@@ -21,7 +21,6 @@ chemical-stress-conjugation-analysis/
 │
 ├── scripts/
 │   ├── features.py             # Feature calculation (physicochemical, fingerprints, MACCS)
-│   ├── snippet_PCS.py          # Calculation of number of Principal Components for data_split.py
 │   ├── data_split.py           # Feature dimensionality reduction, train/validation split, clustering
 │   └── models.py               # Model training, evaluation, and SHAP analysis
 │
@@ -30,8 +29,6 @@ chemical-stress-conjugation-analysis/
 │   │   ├── importances/         # Feature importance and SHAP outputs
 │   │   ├── coefficients/        # Linear model coefficients
 │   │   └── summary_results.csv  # All data combining, if used, all different data sets
-│   │
-│   └── summary_all_clusters.csv # Aggregated results across clusters
 │
 └── environment.yml              # Conda environment specification
 ```

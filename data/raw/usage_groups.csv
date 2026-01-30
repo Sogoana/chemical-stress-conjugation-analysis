@@ -1,0 +1,207 @@
+S_ID,S,Priority_G1,G1_ID,G1,Priority_G2,G2_ID,G2
+ACE,Acesulfame potassium,1.0,FDADD,Food Additives,1,ARTSW,Artificial Sweeteners
+AGOM,Agomelatine,1.0,PHARMA,Pharmaceuticals,1,ANTDEP,Antidepressants
+APOL,p-Aminophenol,1.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+ASP,Aspartame,1.0,FDADD,Food Additives,1,ARTSW,Artificial Sweeteners
+BMIH,1-butyl-3-methylimidazolium hexafluorophosphate,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+BMIT,1-butyl-3-methylimidazolium tetrafluoroborate,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+BPA,Bisphenol A,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPA,Bisphenol A,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+BPAF,Bisphenol AF,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPAF,Bisphenol AF,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+BPAP,Bisphenol AP,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPAP,Bisphenol AP,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+BPB,Bisphenol B,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPB,Bisphenol B,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+BPF,Bisphenol F,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPF,Bisphenol F,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+BPRO,Bupropion,1.0,PHARMA,Pharmaceuticals,1,ANTDEP,Antidepressants
+BPS,Bisphenol S,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPS,Bisphenol S,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+BPZ,Bisphenol Z,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+BPZ,Bisphenol Z,2.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+CBZ,Carbamazepine,1.0,PHARMA,Pharmaceuticals,1,ACONV,Anticonvulsants
+CEOX,Cerium(IV) oxide,1.0,NMAT,Nanomaterials,1,MEONP,Metal Oxide Nanoparticles
+CEOX,Cerium(IV) oxide,2.0,INDTCHEM,Industrial Chemicals,1,ADD,Additives
+CMQT,Chlormequat,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+COPPOXNP,Nano-Copper oxide,1.0,NMAT,Nanomaterials,1,MENP,Metal Nanoparticles
+COPPOXNP,Nano-Copper oxide,2.0,AM,Antimicrobials,1,DISNF,Disinfectants
+COPPOXNP,Nano-Copper oxide,2.0,AM,Antimicrobials,2,PRES,Preservatives
+COPPOXNP,Nano-Copper oxide,2.0,AM,Antimicrobials,3,PPP,Plant Protection Products
+CXOL,Chloroxylenol,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DCF,Diclofenac,1.0,PHARMA,Pharmaceuticals,1,NSAID,Non-steroidal anti-inflammatory drug
+DCM,Dichloroacetonitrile,1.0,DISBYP,Disinfection By-products,1,ORGCHEM,Organic Chemical Intermediates
+DDAC,Didecyl dimethyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DDBAC,Dodecyl dimethyl benzyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DDDAC,Didodecyl dimethyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DLXT,Duloxetine,1.0,PHARMA,Pharmaceuticals,1,ANTDEP,Antidepressants
+DTAC,Dodecyl trimethyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+ESCTP,Escitalopram,1.0,PHARMA,Pharmaceuticals,1,ANTDEP,Antidepressants
+FXT,Fluoxetine,1.0,PHARMA,Pharmaceuticals,1,ANTDEP,Antidepressants
+GENX,2-methyl-3-oxahexanoate,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+GFB,Gemfibrozil,1.0,PHARMA,Pharmaceuticals,1,LR,Lipid regulators
+HDBAC,Hexadecyl dimethyl benzyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+IBP,Ibuprofen,1.0,PHARMA,Pharmaceuticals,1,NSAID,Non-steroidal anti-inflammatory drug
+IOPRO,Iopromide,1.0,PHARMA,Pharmaceuticals,1,XRAY,Contrast agent
+KTPF,Ketoprofen,1.0,PHARMA,Pharmaceuticals,1,NSAID,Non-steroidal anti-inflammatory drug
+LRTD,Loratadine,1.0,PHARMA,Pharmaceuticals,1,ANTHIST,Antihistamines
+MONP,Molybdenum nanoparticles,1.0,NMAT,Nanomaterials,1,MENP,Metal Nanoparticles
+NMRB,n-butyl-N-methylpyrrolidinium bromide,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+NO,Nitric oxide,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+NPOL,p-Nitrophenol,1.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+NPX,Naproxen,1.0,PHARMA,Pharmaceuticals,1,NSAID,Non-steroidal anti-inflammatory drug
+PCM,Paracetamol,1.0,PHARMA,Pharmaceuticals,1,ANLGC,Analgesic & Antipyretic
+PFDOA,Perfluorododecanoic acid,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+PFDOA,Perfluorododecanoic acid,1.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+PFOA,Perfluorooctanoic acid,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+PFOA,Perfluorooctanoic acid,1.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+PFOS,Perfluorooctanesulfonic acid,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+PFOS,Perfluorooctanesulfonic acid,1.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+POL,Phenol,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+POL,Phenol,2.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+POL,Phenol,2.0,INDTCHEM,Industrial Chemicals,2,SOLV,Solvents
+PPOL,Propranolol,1.0,PHARMA,Pharmaceuticals,1,BB,Beta-blockers
+SCCH,Saccharin,1.0,FDADD,Food Additives,1,ARTSW,Artificial Sweeteners
+SHP,Inorganic salt Na[PF6],1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+SILVNP,Silver,1.0,NMAT,Nanomaterials,1,MENP,Metal Nanoparticles
+SILVNP,Silver,2.0,AM,Antimicrobials,1,DISNF,Disinfectants
+SILVNP,Silver,2.0,AM,Antimicrobials,2,PRES,Preservatives
+SILVNP,Silver,2.0,AM,Antimicrobials,3,PPP,Plant Protection Products
+STL,Sertraline,1.0,PHARMA,Pharmaceuticals,1,ANTDEP,Antidepressants
+SUCRA,Sucralose,1.0,FDADD,Food Additives,1,ARTSW,Artificial Sweeteners
+TBC,Tebuconazole,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+TCM,Trichloromethane,1.0,DISBYP,Disinfection By-products,1,ORGCHEM,Organic Chemical Intermediates
+TCM,Trichloromethane,2.0,INDTCHEM,Industrial Chemicals,1,SOLV,Solvents
+TCM,Trichloromethane,3.0,AM,Antimicrobials,1,DISNF,Disinfectants
+TCS,Triclosan,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+TCS,Triclosan,1.0,AM,Antimicrobials,2,PRES,Preservatives
+TEAB,Tetraethylammonium bromide,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+NEHP,N-ethylpyridinium hexafluorophosphate,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+BHA,3-tert-butyl-4-hydroxyanisole,1.0,FDADD,Food Additives,1,PRES,Preservatives
+BHA,3-tert-butyl-4-hydroxyanisole,2.0,AM,Antimicrobials,1,PRES,Preservatives
+BHT,"2,6-di-tert-butyl-4-methylphenol",1.0,INDTCHEM,Industrial Chemicals,1,PRES,Preservatives
+BHT,"2,6-di-tert-butyl-4-methylphenol",2.0,FDADD,Food Additives,1,PRES,Preservatives
+BRMT,Bromate,1.0,DISBYP,Disinfection By-products,1,INCHEM,Inorganic Chemicals
+CLA,Clofibric acid,1.0,PHARMA,Pharmaceuticals,1,LR,Lipid regulators
+CLOR,Chlorite,1.0,DISBYP,Disinfection By-products,1,INCHEM,Inorganic Chemicals
+COPP,Copper ion,1.0,AM,Antimicrobials,1,PPP,Plant Protection Products
+COPP,Copper ion,1.0,AM,Antimicrobials,2,DISNF,Disinfectants
+COPP,Copper ion,1.0,AM,Antimicrobials,3,PRES,Preservatives
+CYN,Cylindrospermopsin,1.0,NATPROD,Natural Product,1,EDC,Endocrine Disrupting Chemicals
+DCLAN,"2,4-dichloroaniline",1.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+DMTT,Dimethoate,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+ETBNZ,Ethylbenzene,1.0,INDTCHEM,Industrial Chemicals,1,SOLV,Solvents
+ETH,Ethel,1.0,INDTCHEM,Industrial Chemicals,1,PPP,Plant Protection Products
+GA,Gibberellin,1.0,NATPROD,Natural Product,1,PPP,Plant Protection Products
+IAA,Indoleacetic acid,1.0,NATPROD,Natural Product,1,PPP,Plant Protection Products
+LICL,Lithium chloride,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+MLGRN,Malachite Green,1.0,INDTCHEM,Industrial Chemicals,1,PIGM,Pigments
+MLT,Malathion,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+NITAC,Nitrous acid,1.0,DISBYP,Disinfection By-products,1,INCHEM,Inorganic Chemicals
+OXYL,O-xylene,1.0,INDTCHEM,Industrial Chemicals,1,SOLV,Solvents
+PG,Propyl gallate,1.0,FDADD,Food Additives,1,PRES,Preservatives
+PRCLZ,Prochloraz,1.0,BCIDE,Industrial Chemicals,1,PPP,Plant Protection Products
+STYR,Styrene,1.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+TBHQ,Tert-butylhydroquinone,1.0,FDADD,Food Additives,1,PRES,Preservatives
+TRXN,Trioxymethylene,1.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+TRXN,Trioxymethylene,2.0,BCIDE,Biocides,1,DISNF,Disinfectants
+CO,Carbon dioxide,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+SMZ,Sulfamethazine,1.0,AM,Antimicrobials,1,AB,Antibiotics
+GO,Graphene oxide,1.0,NMAT,Nanomaterials,1,MEO,Metal Oxides
+MECH,Mercuric chloride,1.0,INDTCHEM,Environmental Toxins,1,INCHEM,Inorganic Chemicals
+TDF,Triadimefon,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+CTL,Chloronitrile,1.0,INDTCHEM,Industrial Chemicals,1,ORGCHEM,Organic Chemical Intermediates
+AZO,Azoxystrobin,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+CBD,Carbendazim,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+MLTN,Melatonin,1.0,PHARMA,Pharmaceuticals,1,SLP,Sleep regulator
+NSMX,4-NSMX,1.0,PHARMA,Pharmaceuticals,1,TP,Transformation product
+ACSMX,N4-AcSMX,1.0,PHARMA,Pharmaceuticals,1,TP,Transformation product
+ACSDZ,N4-AcSDZ,1.0,PHARMA,Pharmaceuticals,1,TP,Transformation product
+TET,Tetracycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+OTET,Oxytetracycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+CLTET,Chlortetracycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+DXCYC,Doxycycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+MNCYC,Minocycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+DMCYC,Demeclocycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+OMCYC,Omadacycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+TGCYC,Tigecycline,1.0,AM,Antimicrobials,1,AB,Antibiotics
+HMIM,1-hexyl-3-methylimidazolium tetrafluoroborate,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+OMIM,1-methyl-3-octylimidazolium tetrafluoroborate,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+CHTSN,Chitosan,1.0,NMAT,Nanomaterials,1,ADD,Additives
+CDCH,Cadmium chloride,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+BACT,Benzyl dimethyl tetradecyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+BEC,Benzethonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DDAC,Didecyl dimethyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DHDAC,Dihexadecyl dimethyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DODAC,Dioctadecyl dimethyl ammonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+NNPOL,Nonylphenol,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+DCF,Diclofenac,1.0,PHARMA,Pharmaceuticals,1,NSAID,Non-steroidal anti-inflammatory drug
+PPOL,Propranolol,1.0,PHARMA,Pharmaceuticals,1,BB,Beta-blockers
+IOPRO,Iopromide,1.0,PHARMA,Pharmaceuticals,1,XRAY,Contrast agent
+PLTXL,Paclitaxel,1.0,PHARMA,Pharmaceuticals,1,ANTINP,Antineoplastic
+DEHP,di-2-ethylhexyl phthalate,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+DEHP,di-2-ethylhexyl phthalate,1.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+HPDAEs,6:2 Cl-PDAEs,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+HPDAEs,6:2 Cl-PDAEs,1.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+OPDAE,8:2 Cl-PFAEs,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+OPDAE,8:2 Cl-PFAEs,1.0,INDTCHEM,Industrial Chemicals,2,ADD,Additives
+ZNOXNPP,Nano-Zinc oxide,1.0,NMAT,Nanomaterials,1,MEONP,Metal Oxide Nanoparticles
+ZNOXNPP,Nano-Zinc oxide,1.0,NMAT,Nanomaterials,1,ADD,Additives
+ZNOXNPP,Nano-Zinc oxide,2.0,AM,Antimicrobials,2,DISNF,Disinfectants
+PFHA,Perfluorohexanoic acid,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+PFNA,Perfluorononanoic acid,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+PFBA,Perfluorobutanoic acid,1.0,INDTCHEM,Industrial Chemicals,1,EDC,Endocrine Disrupting Chemicals
+CIN,Cinnamic acid,1.0,NATPROD,Natural Product,1,ADD,Additives
+CIN,Cinnamic acid,2.0,FDADD,Food Additives,1,ADD,Additives
+BAI,Baicalin,1.0,NATPROD,Natural Product,1,SUPLM,Dietary Supplements
+SUCRO,Sucrose,,FDADD,Food Additives,1,ARTSW,Artificial Sweeteners
+PPD,"N-(1,3-dimethylbutyl)-N′-phenyl-p-phenylenediamine",1.0,INDTCHEM,Industrial Chemicals,1,RUBADD,Rubber additive
+PPDQ,"2-Anilino-5-(4-methylpentan-2-ylamino)cyclohexa-2,5-diene-1,4-dione",1.0,INDTCHEM,Industrial Chemicals,1,RUBADD,Rubber additive
+ASH,Acetylshikonin,1.0,NATPROD,Natural Product,1,ADD,Additives
+NACO,Sodium hypochlorite,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+CLOD,Chlorine dioxide,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+MB,Molybdenum disulfide nanosheets,1.0,NMAT,Nanomaterials,1,MEONP,Metal Oxide Nanoparticles
+CHLR,Chlorine,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+BROM,Bromide ion,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+IODI,Iodide ion,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+IODN,Iodine,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+OXOA,Oxolinic acid,1.0,AM,Antimicrobials,1,AB,Antibiotics
+SONI,Sodium nitrate,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+BC,Benzalkonium chloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+BAB,Benzalkonium bromide,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DOM,Domiphen,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+CHOP,p-Chlorophenol,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+CHOP,p-Chlorophenol,2.0,INDTCHEM,Industrial Chemicals,2,ORGCHEM,Organic Chemical Intermediates
+TCPOL,3-Chlorophenol,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+TCPOL,3-Chlorophenol,2.0,INDTCHEM,Industrial Chemicals,2,ORGCHEM,Organic Chemical Intermediates
+DCPOL,"2,3-Dichlorophenol",1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+DCPOL,"2,3-Dichlorophenol",2.0,INDTCHEM,Industrial Chemicals,2,ORGCHEM,Organic Chemical Intermediates
+HCHP,Hexachlorophene,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+HCHP,Hexachlorophene,2.0,INDTCHEM,Industrial Chemicals,2,RUBADD,Rubber additive
+CHX,Chlorhexidine acetate,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+CH,Chlorhexidine hydrochloride,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+ETOH,Ethanol,1.0,BCIDE,Biocides,1,DISNF,Disinfectants
+IPOH,Isopropyl alcohol,1.0,INDTCHEM,Industrial Chemicals,1,SOLV,Solvents
+DBDMH,"1,3-Dibromo-5,5-dimethylimidazolidine-2,4-dione",1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+CLMT,Chloramine T,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+NADC,Sodium dichloroisocyanurate,1.0,BCIDE,Biocides,1,DISNF,Disinfectants
+TCCA,Trichloroisocyanurate ,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+NAIO,Sodium periodate,1.0,INDTCHEM,Industrial Chemicals,1,INCHEM,Inorganic Chemicals
+KFER,Dipotassium;iron(6+);tetrakis(oxygen(2-))  ,1.0,INDTCHEM,Industrial Chemicals,1,ADD,Additives
+COPPSU,Copper;sulfate;pentahydrate  ,1.0,AM,Antimicrobials,1,PRES,Preservatives
+AMPS,Ammonium persulfate,1.0,INDTCHEM,Industrial Chemicals,1,ADD,Additives
+PSPS,Potassium persulfate,1.0,INDTCHEM,Industrial Chemicals,1,ADD,Additives
+POXD,Hydrogen peroxide,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+PERA,Peracetic acid,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+TEAB,Tetraethylammonium bromide,1.0,INDTCHEM,Industrial Chemicals,1,IL,Ionic Liquids
+CTAB,Cetyltrimethyl ammonium bromide,1.0,AM,Antimicrobials,1,DISNF,Disinfectants
+CYRO,Cyromazine,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+KRES,Kresoxim-methyl,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+ACET,Acetamiprid,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+DINO,Dinotefuran,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+NITE,Nitenpyram,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+THIA,Thiamethoxam,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+PHMG,Polyhexamethylene guanidine hydrochloride,1.0,BCIDE,Biocides,1,DISNF,Disinfectants
+PHMB,Polyhexamethylene biguanide hydrochloride,1.0,BCIDE,Biocides,1,DISNF,Disinfectants
+CLPY,Chlorpyrifos,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products
+CLPYM,Chlorpyrifos methyl,1.0,BCIDE,Biocides,1,PPP,Plant Protection Products

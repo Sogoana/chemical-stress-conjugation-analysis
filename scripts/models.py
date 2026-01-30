@@ -1,3 +1,30 @@
+"""
+model.py
+
+Purpose
+-------
+Train and evaluate multiple regression models (Linear Regression,
+Random Forest, and XGBoost) across systematically generated
+feature-set combinations.
+
+Reproducibility
+---------------
+- Random seed fixed to 42.
+- scikit-learn version: 1.7.0
+
+Input
+-----
+- data/processed/X_train.csv
+- data/processed/X_val.csv
+- data/processed/y_train.csv
+- data/processed/y_val.csv
+
+Output
+------
+- data/results/all_data/coefficients/coeffcients_set_*f
+- data/results/summary_results.csv
+"""
+
 import os
 import pandas as pd
 import numpy as np
@@ -14,7 +41,7 @@ import shap
 # -------------------------------
 # PARAMETERS
 # -------------------------------
-BASE_DIR = "data/processed"   # change to your path
+BASE_DIR = "data/processed"
 RESULTS_DIR = "results"
 CLUSTERS = ["all"]  # Add cluster IDs if needed
 RUN_MODELS = True
@@ -58,177 +85,52 @@ def get_feature_sets(X):
     Concentration = ['Concentration']
     metadata = ['Species_relation']
 
-    # List of feature sets and labels (simplified example; extend as needed)
-    feature_sets = [
-        Concentration + Group1_features,
-        Concentration + Group1_features + physico_features,
-        Concentration + Group1_features + fp_features,
-        Concentration + Group1_features + maccs_features,
-        Concentration + Group1_features + physico_features + fp_features,
-        Concentration + Group1_features + physico_features + maccs_features,
-        Concentration + Group1_features + fp_features + maccs_features,
-        Concentration + Group1_features + physico_features + fp_features + maccs_features,
+    # --- generate all combinations automatically ---
+    from itertools import combinations
 
-        Concentration + Group2_features,
-        Concentration + Group2_features + physico_features,
-        Concentration + Group2_features + fp_features,
-        Concentration + Group2_features + maccs_features,
-        Concentration + Group2_features + physico_features + fp_features,
-        Concentration + Group2_features + physico_features + maccs_features,
-        Concentration + Group2_features + fp_features + maccs_features,
-        Concentration + Group2_features + physico_features + fp_features + maccs_features,
+    BLOCKS = {
+        "Concentration": Concentration,
+        "G1": Group1_features,
+        "G2": Group2_features,
+        "Physicochemical": physico_features,
+        "Fps": fp_features,
+        "PCs": maccs_features,
+        "Species": metadata,
+    }
 
-        Concentration + Group1_features + Group2_features,
-        Concentration + Group1_features + Group2_features + physico_features,
-        Concentration + Group1_features + Group2_features + fp_features,
-        Concentration + Group1_features + Group2_features + maccs_features,
-        Concentration + Group1_features + Group2_features + physico_features + fp_features,
-        Concentration + Group1_features + Group2_features + physico_features + maccs_features,
-        Concentration + Group1_features + Group2_features + fp_features + maccs_features,
-        Concentration + Group1_features + Group2_features + physico_features + fp_features + maccs_features,
-
-        Concentration + Group1_features + metadata,
-        Concentration + Group1_features + physico_features + metadata,
-        Concentration + Group1_features + fp_features + metadata,
-        Concentration + Group1_features + maccs_features + metadata,
-        Concentration + Group1_features + physico_features + fp_features + metadata,
-        Concentration + Group1_features + physico_features + maccs_features + metadata,
-        Concentration + Group1_features + fp_features + maccs_features + metadata,
-        Concentration + Group1_features + physico_features + fp_features + maccs_features + metadata,
-
-        Concentration + Group2_features + metadata,
-        Concentration + Group2_features + physico_features + metadata,
-        Concentration + Group2_features + fp_features + metadata,
-        Concentration + Group2_features + maccs_features + metadata,
-        Concentration + Group2_features + physico_features + fp_features + metadata,
-        Concentration + Group2_features + physico_features + maccs_features + metadata,
-        Concentration + Group2_features + fp_features + maccs_features + metadata,
-        Concentration + Group2_features + physico_features + fp_features + maccs_features + metadata,
-
-        Concentration + Group1_features + Group2_features + metadata,
-        Concentration + Group1_features + Group2_features + physico_features + metadata,
-        Concentration + Group1_features + Group2_features + fp_features + metadata,
-        Concentration + Group1_features + Group2_features + maccs_features + metadata,
-        Concentration + Group1_features + Group2_features + physico_features + fp_features + metadata,
-        Concentration + Group1_features + Group2_features + physico_features + maccs_features + metadata,
-        Concentration + Group1_features + Group2_features + fp_features + maccs_features + metadata,
-        Concentration + Group1_features + Group2_features + physico_features + fp_features + maccs_features + metadata,
-        
-        Concentration,
-        physico_features,
-        fp_features,
-        maccs_features,
-
-        Concentration + physico_features,
-        Concentration + fp_features,
-        Concentration + maccs_features,
-
-        Concentration + physico_features + fp_features,
-        Concentration + physico_features + maccs_features,
-        Concentration + physico_features + fp_features + maccs_features,
-        Concentration + fp_features + maccs_features,
-
-        Concentration + metadata,
-        physico_features + metadata,
-        fp_features + metadata,
-        maccs_features + metadata,
-
-        Concentration + physico_features + metadata,
-        Concentration + fp_features + metadata,
-        Concentration + maccs_features + metadata,
-
-        Concentration + physico_features + fp_features + metadata,
-        Concentration + physico_features + maccs_features + metadata,
-        Concentration + physico_features + fp_features + maccs_features + metadata,
-        Concentration + fp_features + maccs_features + metadata
+    BLOCK_ORDER = [
+        "Concentration",
+        "G1",
+        "G2",
+        "Physicochemical",
+        "Fps",
+        "PCs",
+        "Species",
     ]
 
-    feature_set_labels = [
-        'G1',
-        'G1 + Physicochemical',
-        'G1 + Fps',
-        'G1 + PCs',
-        'G1 + Physicochemical + Fps',
-        'G1 + Physicochemical + PCs',
-        'G1 + Fps + PCs',
-        'G1 + Physicochemical + Fps + PCs',
+    feature_sets = []
+    feature_set_labels = []
 
-        'G2',
-        'G2 + Physicochemical',
-        'G2 + Fps',
-        'G2 + PCs',
-        'G2 + Physicochemical + Fps',
-        'G2 + Physicochemical + PCs',
-        'G2 + Fps + PCs',
-        'G2 + Physicochemical + Fps + PCs',
+    for r in range(1, len(BLOCK_ORDER) + 1):
+        for combo in combinations(BLOCK_ORDER, r):
 
-        'G1 + G2',
-        'G1 + G2 + Physicochemical',
-        'G1 + G2 + Fps',
-        'G1 + G2 + PCs',
-        'G1 + G2 + Physicochemical + Fps',
-        'G1 + G2 + Physicochemical + PCs',
-        'G1 + G2 + Fps + PCs',
-        'G1 + G2 + Physicochemical + Fps + PCs',
+            # avoid meaningless "Species" only
+            if combo == ("Species",):
+                continue
 
-        'G1 + species',
-        'G1 + species + Physicochemical',
-        'G1 + species + Fps',
-        'G1 + species + PCs',
-        'G1 + species + Physicochemical + Fps',
-        'G1 + species + Physicochemical + PCs',
-        'G1 + species + Fps + PCs',
-        'G1 + species + Physicochemical + Fps + PCs',
+            selected_features = []
+            label_parts = []
 
-        'G2 + species',
-        'G2 + species + Physicochemical',
-        'G2 + species + Fps',
-        'G2 + species + PCs',
-        'G2 + species + Physicochemical + Fps',
-        'G2 + species + Physicochemical + PCs',
-        'G2 + species + Fps + PCs',
-        'G2 + species + Physicochemical + Fps + PCs',
+            for block in combo:
+                selected_features += BLOCKS[block]
+                label_parts.append(block)
 
-        'G1 + G2 + species',
-        'G1 + G2 + species + Physicochemical',
-        'G1 + G2 + species + Fps',
-        'G1 + G2 + species + PCs',
-        'G1 + G2 + species + Physicochemical + Fps',
-        'G1 + G2 + species + Physicochemical + PCs',
-        'G1 + G2 + species + Fps + PCs',
-        'G1 + G2 + species + Physicochemical + Fps + PCs',
-
-        'Concentration',
-        'Physicochemical',
-        'Fps',
-        'PCs',
-
-        'Concentration + physicochemical',
-        'Concentration + Fps',
-        'Concentration + PCs',
-
-        'Concentration + physicochemical + Fps',
-        'Concentration + physicochemical + PCs',
-        'Concentration + physicochemical + FPs + PCs',
-        'Concentration + Fps + PCs',
-
-        'Concentration + species',
-        'Physicochemical + species',
-        'Fps + species',
-        'PCs + species',
-
-        'Concentration + physicochemical + species',
-        'Concentration + Fps + species',
-        'Concentration + PCs + species',
-
-        'Concentration + physicochemical + Fps + species',
-        'Concentration + physicochemical + PCs + species',
-        'Concentration + physicochemical + FPs + PCs + species',
-        'Concentration + Fps + PCs + species'
-    ]
+            feature_sets.append(selected_features)
+            feature_set_labels.append(" + ".join(label_parts))
 
     results = []
     return feature_sets, feature_set_labels
+
 
 def train_model(model_name, X_train, y_train, X_val, y_val):
     results = {}

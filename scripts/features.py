@@ -1,3 +1,19 @@
+"""
+features.py
+
+Purpose
+-------
+Retrieve SMILES from PubChem CID and obtain related features: MACCs Keys, physicochemical descriptors and Morgan FPs
+
+Input
+-----
+- data/raw/cids.csv
+
+Output
+------
+- data/processed/descriptors.csv
+"""
+
 import pandas as pd
 import os
 import numpy as np
@@ -14,9 +30,8 @@ BASE_DIR = "data/raw"
 RESULTS_DIR = "data/processed"
 
 # Load data
-cids = pd.read_excel(
-    os.path.join(base_dir, "cids.xlsx"),
-    sheet_name="cids"
+cids = pd.read_csv(
+    os.path.join(BASE_DIR, "cids.csv"),
 )
 
 # Normalization
@@ -80,4 +95,4 @@ for smi in cids['SMILES']:
 df_descriptors = pd.DataFrame(data)
 print(df_descriptors.head())
 
-df_descriptors.to_csv(os.path.join(RESULTS_DIR, "features_processed.csv"), index=False)
+df_descriptors.to_csv(os.path.join(RESULTS_DIR, "descriptors.csv"), index=False)
